@@ -5,5 +5,5 @@ You can remove the shaders extra files, but don't remove these files:
 	- the noise folder
 	
 You can also add local mixer shaders in the /local folder.
-They should appear if you sync.
+They should appear at the start of the list and under a new category called "custom".
 Please don't delete that folder.
