@@ -297,10 +297,7 @@ func _calculatePendingShaders()->void:
 	self.selectedShaders=ShaderInfo.readCurrentlyActiveShadersFromShaderCode(self.parentSprite.material.shader.code, ALL_LOCAL_SHADERS+ALL_SHADERS)
 	
 	self.pendingShaders=[]
-	for shader in ALL_LOCAL_SHADERS:
-		if(self.selectedShaders.find(shader)<0):
-			self.pendingShaders.append(shader)
-	for shader in ALL_SHADERS:
+	for shader in ALL_LOCAL_SHADERS + ALL_SHADERS:
 		if(self.selectedShaders.find(shader)<0):
 			self.pendingShaders.append(shader)
 	self.onShadersCalculated.emit(self.selectedShaders, self.pendingShaders)
