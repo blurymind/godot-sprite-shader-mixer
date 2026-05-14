@@ -1,3 +1,4 @@
+// given the filename is blur2.gdshader ....
 //BLUR2_ <-- note that you have to prefix all variables with an uppercased shader file name of the shader
 uniform bool  BLUR2_active  = true;
 // Note that all shaders MUST have a _active boolean variable to work

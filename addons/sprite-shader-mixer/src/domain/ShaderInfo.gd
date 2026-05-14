@@ -13,7 +13,7 @@ const SHADERS_COMMENT="//SHADERS:"
 
 var name:String #name of the shader
 var group:String #group of the shader
-var isLocal:bool #group of the shader
+var isLocal:bool #shader is from shaders/local
 var basePath:String #base path of the shader
 var description:String #description of the shader
 var author:String #original author of the shader
