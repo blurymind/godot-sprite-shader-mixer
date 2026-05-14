@@ -40,10 +40,7 @@ func setParentSprite(parent)->void:
 #   shaderName -> the name to search
 #   return -> the ShaderInfo found or null otherwise
 func _findShaderInfo(shaderName:String) -> ShaderInfo:
-	for shader in ALL_SHADERS:
-		if(shader.name.match(shaderName)):
-			return shader
-	for shader in ALL_LOCAL_SHADERS:
+	for shader in ALL_LOCAL_SHADERS + ALL_SHADERS:
 		if(shader.name.match(shaderName)):
 			return shader
 	return null
